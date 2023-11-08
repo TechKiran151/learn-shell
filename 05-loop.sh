@@ -10,3 +10,9 @@ while [ "$a" -gt 0 ]; do
   a=$(($a-1))
   sleep 1
 done
+
+#for loop
+for fruits in banana apple orrange mango; do
+  echo fruit name is $fruits
+  sleep 1
+  done
