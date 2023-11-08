@@ -5,7 +5,7 @@ sample(){
 sample
 
 Tech(){
-  echo "$#"
-  echo "$*"
+  echo Function number of argument - "$#"
+  echo Function Input - "$*"
 }
 Tech kiran Gowda
