@@ -8,4 +8,4 @@ Tech(){
   echo "$#"
   echo "$*"
 }
-Tech "kiran Gowda"
+Tech kiran Gowda
