@@ -26,13 +26,25 @@ sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
 centos:x:1000:1000:Cloud User:/home/centos:/bin/bash
 expense:x:1001:1001::/home/expense:/bin/bash
 
-Replace root with admin
+Replace chrony with admin
 
 sed 's/root/admin/' file
 sed 's/root/admin/g' file
+#g means global that entire line will be replace with admin
 
 Delete lines can happen in two ways
 1. line no
+#d means delete
         sed '2d' file
  2. Search a word and delete those lines
         sed '/yeslogin/ d' file
+
+Add your lines
+#c means change
+sed '1 c helo world' file
+sed '/bash/ c Hellow World' file
+
+
+sed -e '1d' -e '2 a Hello World' file
+
+-e option is used to enable multiple operations with single sed command
