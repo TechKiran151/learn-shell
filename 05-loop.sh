@@ -16,3 +16,12 @@ for fruits in banana apple orrange mango; do
   echo fruit name is $fruits
   sleep 1
   done
+
+  #Function
+
+  Sample() {
+    echo kiran
+    echo $*
+    echo $#
+  }
+  Sample
