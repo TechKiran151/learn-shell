@@ -17,11 +17,3 @@ for fruits in banana apple orrange mango; do
   sleep 1
   done
 
-  #Function
-
-  Sample() {
-    echo kiran
-    echo $*
-    echo $#
-  }
-  Sample
